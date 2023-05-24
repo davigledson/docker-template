@@ -1,3 +1,5 @@
+<?php 
+
 $posts = array(
   array(
     'title' => 'Festa no parque',

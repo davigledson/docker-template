@@ -152,8 +152,7 @@ date_default_timezone_set('america/sao_paulo');
 // echo 'ola' . $mensagem;
 //phpinfo();
 
-
-?>
+echo 'ola';?>
 
 <!-- <form action="" method="get" action='index.php'>
     nome: <input type="text" name="nome"/>
