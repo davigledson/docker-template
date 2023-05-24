@@ -1,6 +1,7 @@
 
 
 <?php
+
 // declare(strict_types=1);
 // phpinfo();
 // echo 'Olá mundo';
@@ -133,7 +134,7 @@
 // } else {
 //     echo $_GET['nome'] . '  obrigado por se inscrever';
 // }
-date_default_timezone_set('america/sao_paulo');
+//date_default_timezone_set('america/sao_paulo');
 
 
 
@@ -141,24 +142,44 @@ date_default_timezone_set('america/sao_paulo');
 
 // $hora = date('H');
 
-// if ($hora < 12){
-//     $mensagem = " Bom dia! <img/>";
-// } elseif(date('H') > 11 && date('H') < 18) {
-//     $mensagem = "Boa tarde! <img/>";
-//     $mensagem.= ' Aceita um chá gelado?';
-// } elseif (date('H') > 17){
-//     $mensagem = 'Boa noite!';
+
+
+// function oi(){
+    
+// echo ' olá, tudo bem?';
+
 // }
-// echo 'ola' . $mensagem;
-//phpinfo();
 
-echo 'ola';?>
-
-<!-- <form action="" method="get" action='index.php'>
-    nome: <input type="text" name="nome"/>
-    <input type="submit" value="enviar">
-</form> -->
+// oi();
 
 
+// echo '<hr>';
 
+// function strconcat($palavra, $palavra2){
+//     return $palavra . $palavra2;
+// }
+
+// echo strconcat('Olá', ' a todos!');
+
+
+// $a = 3;
+// function teste()
+// {   $a=0;
+//     $a += 2;
+   
+    
+// }
+// teste();
+// echo $a;
+
+// function contador()
+// {
+//     static $total = 0;
+//     return $total++;
+
+// }
+
+// for ($i=1;$i<=5;$i++){
+//     echo contador();
+// }
 
