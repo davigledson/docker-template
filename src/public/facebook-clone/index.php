@@ -502,7 +502,9 @@
                     
                     <div class="flex-grow flex flex-col">
                       <p class="font-semibold text-sm text-gray-700 flex">
-                     >      fulato de tal             <img src="check.png" class="w-4 h-4 ml-1" />
+                     >     <?php 
+                      echo $post['title'];
+                      ?>            <img src="check.png" class="w-4 h-4 ml-1" />
 
                       </p>
                       <span class="text-xs font-thin text-gray-400"><?php echo $post['date'] ?></span>
@@ -520,8 +522,7 @@
                       <?php 
                       echo $post['description'];
                       ?>
-                      <a href="https://lnkd.in/dmJQ8z-v" class="text-blue-600"
-                        >https://lnkd.in/dmJQ8z-v</a
+                    
                       >
                     </p>
                   </div>

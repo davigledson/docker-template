@@ -1,5 +1,5 @@
 <?php 
-
+//echo $posts[2]['title'];
 $posts = array(
   array(
     'title' => 'Festa no parque',
