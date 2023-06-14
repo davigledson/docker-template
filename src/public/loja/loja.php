@@ -8,36 +8,44 @@
 </head>
 <body>
     <?php 
-    $cupom = trim($_GET['cupom']);
-    $cupom_validos = array('NIVER10','PROMO15');
+    $cupom='';
+    if(isset($_GET['cupom'])) $cupom = trim($_GET['cupom']); 
+
+     $cupom_validos = array('NIVER10','PROMO15');
+     
+     if(isset($_GET['cupom'])) $cupomAceito = in_array($cupom, $cupom_validos);
     $cupomAceito = in_array($cupom, $cupom_validos);
+    
 
     ?>
 
-    <h1><a href="index.php">Shooping Virtual</a></h1>
+    <h1><a href="loja.php">Shooping Virtual</a></h1>
     <ul>
         <li>
-            <a href="p1.php"> <?php echo ($cupomAceito)?'?cupom=:'.$cupom:'';?></a>Produto 1
+            <a href="p1.php<?php echo ($cupomAceito)?'?cupom='.$cupom:'';?>">Produto 1</a> 
         </li>
+
         <li>
-            <a href="p2.php"> <?php echo ($cupomAceito)?'?cupom=:'.$cupom:'';?></a>Produto 2
-        </li>
+            <a href="p2.php<?php echo ($cupomAceito)?'?cupom='.$cupom:'';?>">Produto 2</a>
+        </li>   
     </ul>
 
-<form action="/src/public/index.php" method="get">
+<form action="loja.php" method="get">
 Cupom de desconto:
 <?php 
 if($cupomAceito){
     
 ?>
 <strong><?php echo $cupom;?></strong>
-<img src="ok" alt="">
+
+<!-- <img src="https://icons.iconarchive.com/icons/custom-icon-design/flastastic-9/16/Accept-icon.png" alt=""> -->
 
 <?php } else{?>
 
 <input type="text" name="cupom"> <input type="submit">
 
 <?php }?>
+
 </form>
 </body>
 </html>
